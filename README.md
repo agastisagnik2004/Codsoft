@@ -25,6 +25,51 @@ This internship at **CodSoft** provided a platform to apply theoretical knowledg
 - Result interpretation & visualization
 
 # Task-2
+# Credit Card Fraud Detection
+
+## Overview
+This project focuses on detecting fraudulent credit card transactions using machine learning techniques. The goal is to classify transactions as either legitimate or fraudulent based on a dataset of anonymized credit card transactions.
+
+## Dataset
+- The dataset used is `creditcard.csv`, containing transactions made by European cardholders over two days.
+- It has 31 columns: `Time`, 28 anonymized features (`V1` to `V28`), `Amount`, and the target variable `Class` (0 = legitimate, 1 = fraud).
+- The dataset is highly imbalanced, with fraudulent transactions accounting for a very small fraction of the total.
+
+## Features
+- **Time:** Seconds elapsed between each transaction and the first transaction.
+- **V1 to V28:** Principal components obtained via PCA to protect sensitive information.
+- **Amount:** Transaction amount.
+- **Class:** Target variable indicating fraud.
+
+## Installation
+To run this project, you need Python and the following libraries installed:
+# 'pip install pandas scikit-learn imbalanced-learn'
+
+## Usage
+1. Load the dataset (`creditcard.csv`).
+2. Preprocess data by scaling the `Time` and `Amount` features.
+3. Handle class imbalance using SMOTE (Synthetic Minority Over-sampling Technique).
+4. Split the data into training and testing sets.
+5. Train a Logistic Regression model.
+6. Evaluate the model using classification metrics and confusion matrix.
+
+## How to Run
+Place the dataset file `creditcard.csv` in the project directory. Then run the main script:
+'python credit_card_fraud_detection.py
+
+## Results
+The model’s performance is evaluated using precision, recall, F1-score, and confusion matrix. Using SMOTE improves the detection of fraudulent transactions by balancing the dataset.
+
+## Contributing
+Feel free to fork the repository and submit pull requests for improvements or new features.
+
+## License
+This project is open-source and available under the MIT License.
+
+## References
+- Credit Card Fraud Detection dataset from Kaggle.
+- Imbalanced-learn library for handling class imbalance.
+- Scikit-learn for machine learning models.
 
 # Task-3
 # Sales Forcasting Model Evaluation
