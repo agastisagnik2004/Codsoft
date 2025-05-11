@@ -23,8 +23,11 @@ This internship at **CodSoft** provided a platform to apply theoretical knowledg
 - Data cleaning & preprocessing
 - Model training, evaluation, and comparison
 - Result interpretation & visualization
+
+# Task-2
+
 # Task-3
-# Regression Model Evaluation
+# Sales Forcasting Model Evaluation
 
 This project involves building and evaluating a regression model to predict a continuous target variable. The model's performance has been assessed using standard regression error metrics and visualization.
 
